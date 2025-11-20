@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greeting Input</title>
+  </head>
+  <body>
+    <h2>Enter your name:</h2>
+    <input type="text" id="nameInput" placeholder="Your name here">
+    <button onclick="greetUser()">Greet Me</button>
+
+    <script>
+    function greetUser() {
+        let name = document.getElementById("nameInput").value;
+
+        // Check for empty string or only whitespace
+        if (name.trim().length === 0) { 
+            alert("Please enter your name first!");
+            return; // Stop the function if the input is empty
+        } 
+        
+        // If it's not empty, proceed with the greeting
+        alert("Hello, " + name + "!");
+    }
+    </script>
+  </body>
+</html>
