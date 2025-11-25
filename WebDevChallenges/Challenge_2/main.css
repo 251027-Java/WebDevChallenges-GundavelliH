@@ -1,0 +1,45 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+
+.image-frame {
+  padding: 40px; 
+  border: 7px solid black; 
+}
+
+
+#location-select {
+  background-color: #e0e0e0; 
+
+  border: 1px solid #aaa; 
+  border-radius: 4px;
+
+  width: 150px; 
+  font-size: 1rem;
+
+  /* Keep text dark for readability */
+  color: #333; 
+}
+
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  text-align: left; 
+  margin: 0; 
+}
+
+/* Keep the list items horizontal */
+.social-links li {
+  display: inline-block;
+  
+  padding: 0; 
+}
+
+/* Keep the divider styling */
+.social-links li:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px; 
+  color: #888;
+}
